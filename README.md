@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  implementation("net.lepinoid:uuid-serializer:1.0")
+  implementation("net.lepinoid:uuid-serializer-jvm:1.0")
 }
 ```
 
