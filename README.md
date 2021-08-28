@@ -1,4 +1,4 @@
-# UuidSerializer
+# uuid-serializer
 
 :book: Simple [Uuid](https://github.com/benasher44/uuid) serializer library
 
@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  implementation("net.lepinoid:uuidserializer:1.0")
+  implementation("net.lepinoid:uuid-serializer:1.0")
 }
 ```
 
@@ -24,7 +24,7 @@ dependencies {
 ```kotlin
 commonMain {
     dependencies {
-        implementation("net.lepinoid:uuidserializer:1.0")
+        implementation("net.lepinoid:uuid-serializer:1.0")
     }
 }
 ```
