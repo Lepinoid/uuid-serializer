@@ -1,3 +1,3 @@
 
-rootProject.name = "UuidSerializer"
+rootProject.name = "uuid-serializer"
 
