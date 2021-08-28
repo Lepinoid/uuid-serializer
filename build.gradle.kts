@@ -59,6 +59,19 @@ kotlin {
 }
 
 publishing {
+    publications.all {
+        this as MavenPublication
+        pom {
+            name.set(project.name)
+            url.set("https://github.com/Lepinoid/UuidSerializer")
+            licenses {
+                license {
+                    name.set("MIT License")
+                    url.set("https://github.com/Lepinoid/UuidSerializer/blob/main/LICENSE")
+                }
+            }
+        }
+    }
     repositories.maven {
         url = uri("${System.getProperty("user.home")}/lepinoid/maven-repo")
     }
