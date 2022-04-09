@@ -1,5 +1,7 @@
 # uuid-serializer
 
+LatestVersion :arrow_right: ![](https://img.shields.io/maven-metadata/v?label=%20&metadataUrl=https%3A%2F%2Flepinoid.github.io%2Fmaven-repo%2Fnet%2Flepinoid%2Fuuid-serializer%2Fmaven-metadata.xml)
+
 :book: Simple [Uuid](https://github.com/benasher44/uuid) serializer library
 
 # Gradle
@@ -15,7 +17,7 @@ repositories {
 }
 
 dependencies {
-  implementation("net.lepinoid:uuid-serializer-jvm:1.0")
+  implementation("net.lepinoid:uuid-serializer-jvm:$VERSION")
 }
 ```
 
@@ -24,7 +26,7 @@ dependencies {
 ```kotlin
 commonMain {
     dependencies {
-        implementation("net.lepinoid:uuid-serializer:1.0")
+        implementation("net.lepinoid:uuid-serializer:$VERSION")
     }
 }
 ```
