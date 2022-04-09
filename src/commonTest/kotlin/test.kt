@@ -1,6 +1,7 @@
 import com.benasher44.uuid.Uuid
 import com.benasher44.uuid.uuid4
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import net.lepinoid.uuidserializer.UuidSerializer
 import kotlin.test.Test
@@ -19,7 +20,7 @@ class Test {
     fun dataClassSerializer() {
         val data = TestData(uuid4(), "this is uuid!!")
         val json = Json.encodeToString(TestData.serializer(), data)
-        val decoded = Json.decodeFromString<TestData>(TestData.serializer(), json)
+        val decoded = Json.decodeFromString<TestData>(json)
         assertEquals(data, decoded)
     }
 
