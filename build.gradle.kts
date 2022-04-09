@@ -41,7 +41,7 @@ kotlin {
         val commonMain by getting  {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")
-                implementation("com.benasher44:uuid:0.3.0")
+                implementation("com.benasher44:uuid:0.4.0")
             }
         }
         val commonTest by getting {
