@@ -20,7 +20,7 @@ kotlin {
             useJUnit()
         }
     }
-    js(LEGACY) {
+    js(BOTH) {
         browser {
             commonWebpackConfig {
                 cssSupport.enabled = true
