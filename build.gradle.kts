@@ -64,8 +64,10 @@ kotlin {
 }
 
 publishing {
-    publications.all {
-        this as MavenPublication
+    publications.create<MavenPublication>("mavenJava") {
+        groupId = project.group.toString()
+        artifactId = project.base.archivesName.get()
+        version = project.version.toString()
         pom {
             name.set(project.name)
             url.set("https://github.com/Lepinoid/UuidSerializer")
@@ -77,7 +79,12 @@ publishing {
             }
         }
     }
-    repositories.maven {
-        url = uri("${System.getProperty("user.home")}/Documents/lepinoid/maven-repo")
+    repositories{
+        val targetPath = System.getenv("PUBLISH_PATH")
+        if (targetPath != null) {
+            maven {
+                url = uri("${System.getProperty("user.home")}/Documents/lepinoid/maven-repo")
+            }
+        }
     }
 }
