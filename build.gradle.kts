@@ -83,7 +83,7 @@ publishing {
         val targetPath = System.getenv("PUBLISH_PATH")
         if (targetPath != null) {
             maven {
-                url = uri("${System.getProperty("user.home")}/Documents/lepinoid/maven-repo")
+                url = uri(targetPath)
             }
         }
     }
