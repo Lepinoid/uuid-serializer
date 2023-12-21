@@ -20,10 +20,15 @@ kotlin {
             useJUnit()
         }
     }
-    js(BOTH) {
+    js {
         browser {
             commonWebpackConfig {
-                cssSupport.enabled = true
+                cssSupport{
+                    enabled = true
+                }
+            }
+            testTask {
+                useMocha()
             }
         }
     }
