@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.9.22"
-    kotlin("plugin.serialization") version "1.9.22"
+    kotlin("plugin.serialization") version "2.2.21"
     `maven-publish`
 }
 
